@@ -23,5 +23,5 @@ More details:
 - divisors have high precedence, ex: 51 -> FooBar
 - the content is analysed in the order they appear, ex: 53 -> BarFoo
 - 13 contains 3 so we print "Foo"
-- 15 is divisible by 3 and 5 and contains 5, so we print â€œFooBarBarâ€
-- 33 contains 3 two times and is divisible by 3, so we print â€œFooFooFooâ€
+- 15 is divisible by 3 and 5 and contains 5, so we print "FooBarBar"
+- 33 contains 3 two times and is divisible by 3, so we print "FooFooFoo"
