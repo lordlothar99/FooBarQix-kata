@@ -1,12 +1,14 @@
 package com.foobarqix;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
-import junitparams.JUnitParamsRunner;
-import junitparams.Parameters;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
 
 @RunWith(JUnitParamsRunner.class)
 public class FooBarQixTest {
@@ -21,8 +23,8 @@ public class FooBarQixTest {
 	@Test
 	@Parameters({ "8, 8", //
 			"16, 16" })
-	public void should_return_string_conversion_when_not_divisible_nor_contains_special_number(int number, String text) {
-		assertEquals(text, fooBarQix.convertToText(number));
+	public void should_return_number_as_text_when_not_divisible_nor_contains_special_number(int number, String text) {
+		assertThat(fooBarQix.convertToText(number)).isEqualTo(text);
 	}
 
 	@Test
